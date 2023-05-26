@@ -77,6 +77,20 @@
             font-size: 2.5rem;
         }
 
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            padding: 12px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
         .rightSection img {
             width: 80%;
         }
@@ -116,7 +130,53 @@
             height: 93px;
             width: 1px;
             background-color: white;
-            margin: 0 100px;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 77px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+        }
+
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
         }
     </style>
 </head>
@@ -144,6 +204,10 @@
                 <div>and I am a passionate</div>
                 <!-- <div>Web developer</div> -->
                 <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
             </div>
             <div class="rightSection">
                 <img src="bg.png" alt="">
@@ -156,21 +220,86 @@
 
             <div class="box">
                 <div class="vertical">
-                    <img  class="image-top" src="developer.png" alt="">
-                    <div class="vertical-title" >HTML developer ()2010-2012)</div>
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">HTML developer (2010-2012)</div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, animi placeat sit ut, ex explicabo quibusdam, aspernatur ab hic voluptate consequuntur quis distinctio.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, animi placeat sit ut, ex
+                        explicabo quibusdam, aspernatur ab hic voluptate consequuntur quis distinctio.
                     </div>
                 </div>
                 <div class="vertical">
-                    Node.js developer (2012-2014)
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">HTML developer (2010-2012)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, animi placeat sit ut, ex
+                        explicabo quibusdam, aspernatur ab hic voluptate consequuntur quis distinctio.
+                    </div>
                 </div>
-                <div class="vertical"></div>
-                <div class="vertical"></div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">HTML developer (2010-2012)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, animi placeat sit ut, ex
+                        explicabo quibusdam, aspernatur ab hic voluptate consequuntur quis distinctio.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">HTML developer (2010-2012)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, animi placeat sit ut, ex
+                        explicabo quibusdam, aspernatur ab hic voluptate consequuntur quis distinctio.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">HTML developer (2010-2012)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, animi placeat sit ut, ex
+                        explicabo quibusdam, aspernatur ab hic voluptate consequuntur quis distinctio.
+                    </div>
+                </div>
+
+
             </div>
 
         </section>
     </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Jainam's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169 jainamsportfolio.com | All rights reserved
+        </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
