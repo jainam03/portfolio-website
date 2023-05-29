@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>Contact me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Contact me!</h1>
+    <div>Feel free to let me know what's in your mind.</div>
+
+    <div class="contact-card" >
+        <input type="text" placeholder="Your name please" class="name-el" >
+
+        <input type="email" placeholder="Your e-mail please" class="email-el" >
+        <div class="thoughts" >
+            <textarea placeholder="Share your thoughts here" class="textarea-el" >
+            </textarea>
+        </div>
+
+        <button id="submit-btn" >Share thought</button>
+    </div>
+
+    <script type="text/javascript" >
+        let nameEl = document.querySelector("name-el")
+        let emailEl = document.querySelector("email-el")
+        let textareaEl = document.querySelector("textarea-el")
+        let submitBtn = document.getElementById("submit-btn")
+
+        submitBtn.addEventListener('click', function() {
+            alert("Thank you for sharing your thoughts!")
+        })
+    </script>
+</body>
+
+</html>
